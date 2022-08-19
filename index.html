@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Calculadora Arbritaria</title>
+</head>
+
+<body>
+    <header>
+        <h1>Calculadora arbritaria</h1>
+    </header>
+    <main>
+        <label>
+            <p id="text">Introduza as probabilidades e a parada da sua aposta original e as probabilidades para o
+                resultado alternativo. A nossa calculadora de arbitragem dir-lhe-á se existe uma oportunidade de
+                arbitragem.</p>
+            <p>Tipo de mercador</p>
+            <select id="select">
+                <option>Lateral</option>
+                <option>Trilateral</option>
+            </select>
+        </label>
+        <section id="tabela-de-apostas">
+            <table id="tabela1">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Probabilidade</th>
+                        <th>Montante de aposta</th>
+                        <th>Retorno</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <th>Aposta original</th>
+                    <th><input id="OddApostaOriginal" class="input" type="number" placeholder="Inserir a Probabilidade">
+                    </th>
+                    <th><input id="ValorDaApostaOriginal" class="input" type="number" placeholder="Inserir aposta"></th>
+                    <th id="RetornoOriginal" class="caixa-de-numero">R$ 0,00</th>
+                </tr>
+                <tr>
+                    <th>Cobertura</th>
+                    <th><input id="OddCobertura" class="input" type="number" placeholder="Inserir a Probabilidade"></th>
+                    <th id="ValorDaCobertura" class="caixa-de-numero">-</th>
+                    <th id="RetornoCobertura" class="caixa-de-numero">-</th>
+                </tr>
+            </table>
+        </section>
+        <div>
+            <button>Limpar</button>
+        </div>
+        <section id="tabela-de-resultados">
+            <table>
+                <tr>
+                    <th>Montante de aposta total &nbsp;</th>
+                    <th id="MontanteTotal" class="caixa-de-numero">R$ 0,00</th>
+                </tr>
+                <tr>
+                    <th>Pagamento total</th>
+                    <th id="Pagamento" class="caixa-de-numero">R$ 0,00</th>
+                </tr>
+                <tr>
+                    <th>Lucro de Cobertura x <br>Unidades</th>
+                    <th id="lucro-unidade" class="caixa-de-numero">R$ 0,00</th>
+                </tr>
+            </table>
+        </section>
+    </main>
+</body>
+<script src="./script.js"></script>
+
+
+</html>
